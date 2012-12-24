@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: dealigence_development
+  pool: 5
+  timeout: 5000
+  username: rails
+  password: 4Me2Postgresql
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: dealigence_test
+  pool: 5
+  timeout: 5000
+  username: rails
+  password: 4Me2Postgresql
