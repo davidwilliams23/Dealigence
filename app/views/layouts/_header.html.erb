@@ -1,15 +1,18 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
-          <%= link_to "Dealigence", '#', :id => "logo" %>
+          <%= link_to "Dealigence", '/', :id => "logo" %>
           <nav>
+	<ul class = "nav pull-center">
+		  <marquee behavior="alternate">Our Dealigence Benefits You!!</marquee>
+		  </ul>
             <ul class="nav pull-right">
-              <li><%= link_to "Home",    '#' %> </li>
-              <li><%= link_to "About Us",    '#' %> </li>
-              <li><%= link_to "Categories",    '#' %> </li>
+              <li><%= link_to "Home",    '/' %> </li>
+              <li><%= link_to "About Us",    '/about' %> </li>
+              <li><%= link_to "Categories",    '/categories' %> </li>
 
-              <li><%= link_to "Help",    '#' %></li>
-              <li><%= link_to "Login",    '#' %></li>
+              <li><%= link_to "Help",    '/help' %></li>
+              <li><%= link_to "Login",    '/login' %></li>
             </ul>
           </nav>
         </div>

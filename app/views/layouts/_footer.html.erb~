@@ -1,12 +1,10 @@
 <footer class="footer">
   <small>
-    <a href="http://railstutorial.org/">Rails Tutorial</a>
-    by Michael Hartl
-  </small>
+    Dealigence
   <nav>
     <ul>
-      <li><%= link_to "Help"  '#' %></li>
-      <li><%= link_to "Contact", '#' %></li>
+      <li><%= link_to "Help"  '/help' %></li>
+      <li><%= link_to "Contact", '/contact_us' %></li>
       <li><a href="http://news.railstutorial.org/">News</a></li>
     </ul>
   </nav>
