@@ -15,7 +15,6 @@ match 'about', :to => 'static_pages#about'
 match 'categories', :to => 'static_pages#categories'
   get "static_pages/categories"
 
-match '/signup', :to => 'users#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
