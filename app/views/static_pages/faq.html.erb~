@@ -1,14 +1,14 @@
-<% provide(:title, 'Contact Us') %>
+<% provide(:title, 'FAQ') %>
 <!DOCTYPE html>
 <html>
   <head>
     <title> Dealigence | <%= yield(:title) %></title>
   </head>
   <body>
-    <h1>Contact</h1>
+    <h1>FAQ</h1>
     <p>
       Page Under Construction.
-To Contact us email dealigentsolutions@gmail.com
+If you have questions please email dealigence@gmail.com
     </p>
   </body>
 </html>

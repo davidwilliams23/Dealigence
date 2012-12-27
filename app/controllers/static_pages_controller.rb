@@ -1,19 +1,7 @@
 class StaticPagesController < ApplicationController
-  def home
+  def faq
   end
 
-  def help
-  end
-
-  def login
-  end
-
-  def contact_us
-  end
-
-  def about
-  end
-
-  def categories
+  def events
   end
 end

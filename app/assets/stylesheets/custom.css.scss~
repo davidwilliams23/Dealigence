@@ -40,6 +40,12 @@ textarea {
 
 /* header */
 
+.navbar{
+.navbar-inner{
+background-color: #2c2c2c;
+background-image: none;
+	}
+}
 #logo {
   float: left;
   margin-right: 10px;
