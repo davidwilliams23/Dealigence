@@ -1,8 +1,14 @@
 Dealigence::Application.routes.draw do
+  get "static_pages/faq"
+match '/faq', :to => 'static_pages#faq'
+  get "static_pages/events"
+match '/events', :to => 'static_pages#events'
 resources :users  
 
+resources :sessions, :only => [:new, :create, :destroy]
+
 match '/signup', :to => 'users#new'
- root :to => 'static_pages#home'
+root :to => 'static_pages#home'
 get "static_pages/home"
   match 'help', :to => 'static_pages#help'
   get "static_pages/help"
@@ -15,6 +21,12 @@ match 'about', :to => 'static_pages#about'
 match 'categories', :to => 'static_pages#categories'
   get "static_pages/categories"
 
+match '/signin', :to => 'sessions#new'
+match 'signout', :to => 'sessions#destroy', :via => :delete
+get "emailer/index"
+post "emailer/index"
+#match '/emailer' => 'emailer#index', :controller => 'emailer', :action => 'index'
+resources :emailer 
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
