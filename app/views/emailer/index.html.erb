@@ -1,0 +1,12 @@
+<h1>Send Email</h1>
+<%= form_for :sendmail do |f| %>
+<%= f.label :email_subject %>
+      <%= f.text_field :subject %>
+<%= f.label :recipient %>
+<%= f.text_field :recipient %>
+
+<%= f.label :message %>
+ <%= f.text_area :body, :size => "60x12" %>
+
+<%= f.submit "Send", :class => "btn btn-large"%>
+<% end %>
